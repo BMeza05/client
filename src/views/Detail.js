@@ -11,6 +11,9 @@ export default props => {
             <p>Title: {product.title}</p>
             <p>Description: {product.description}</p>
             <p>Price: {product.price}</p>
+            <link to={"/product/" + product.id + "/edit"}>
+            Edit
+            </link>
         </div>
     )
 }
