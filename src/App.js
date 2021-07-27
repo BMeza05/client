@@ -1,11 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import Main from '../src/views/Main'
+import Main from './views/Main'
+import { Router } from '@reach/router'
+import Detail from './views/Detail'
 
 function App() {
   return (
     <div className="App">
-      < Main />
+      <Router>
+      < Main path="/product"/>
+      <Detail path="/product/:id"/>
+      </Router>
     </div>
   );
 }
